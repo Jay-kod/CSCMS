@@ -77,12 +77,12 @@
           </div>
 
           <div class="flex items-center justify-between pt-2 px-1">
-            <label class="label cursor-pointer justify-start gap-2 p-0">
-              <input id="remember-me" name="remember-me" type="checkbox" class="checkbox checkbox-primary checkbox-sm border-gray-300" />
-              <span class="label-text text-gray-700">
-                Keep me logged in
-              </span>
-            </label>
+            <div class="form-control">
+              <label class="label cursor-pointer gap-2 p-0">
+                <input type="checkbox" class="checkbox checkbox-primary" />
+                <span class="label-text text-gray-700 font-medium">Keep me logged in</span>
+              </label>
+            </div>
 
             <div class="text-sm">
               <a href="#" class="font-bold text-primary hover:text-green-700 transition">
