@@ -9,7 +9,7 @@
         <router-link to="/super-admin" class="block bg-green-800 px-4 py-3 rounded hover:bg-green-700 transition">Dashboard</router-link>
         <router-link to="/super-admin/users" class="block px-4 py-3 rounded hover:bg-green-700 transition">Users</router-link>
         <router-link to="/super-admin/settings" class="block px-4 py-3 rounded hover:bg-green-700 transition">Site Settings</router-link>
-        <router-link :to="{ name: 'login' }" class="block px-4 py-3 rounded hover:bg-red-700 text-red-100 transition mt-auto">Logout</router-link>
+        <router-link to="/super-admin/login" class="block px-4 py-3 rounded hover:bg-red-700 text-red-100 transition mt-auto">Logout</router-link>
       </nav>
     </aside>
 
