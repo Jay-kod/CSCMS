@@ -28,7 +28,10 @@ class SystemAuditTest extends TestCase
     public function test_department_admin_cannot_access_super_admin_routes()
     {
         // Act as a newly created Department Admin
-        $admin = User::factory()->create();
+        $admin = User::firstOrCreate(
+            ['email' => 'testadmin@example.com'],
+            ['name' => 'Test Admin', 'password' => bcrypt('password')]
+        );
         $admin->assignRole('dept_admin');
 
         // Attempting to breach Super Admin "users" management
