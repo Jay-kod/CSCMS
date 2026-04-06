@@ -56,12 +56,11 @@ class SystemAuditTest extends TestCase
 
         // B) Super Admin publishes a news article to the backend
         $newsData = [
-            'author_id' => $superAdmin->id,
+            'created_by' => $superAdmin->id,
             'title' => 'Breakthrough in AI Research at NSUK',
             'slug' => 'ai-research-nsuk',
-            'content' => 'We are proud to announce a new milestone in Artificial Intelligence...',
-            'image' => '/storage/test.png',
-            'type' => 'news', // Default enum
+            'body' => 'We are proud to announce a new milestone in Artificial Intelligence...',
+            'cover_image' => '/storage/test.png',
             'is_published' => true,
         ];
 
