@@ -147,6 +147,16 @@ const form = ref({
     password: ""
 });
 
+const fillDemoCredentials = () => {
+    if (props.type === 'Super Admin') {
+        form.value.email = 'admin@nsuk.edu.ng'; // Based on dummy logic below
+        form.value.password = 'password';
+    } else {
+        form.value.email = 'dept@nsuk.edu.ng'; // Based on dummy logic below
+        form.value.password = 'password';
+    }
+};
+
 const loading = ref(false);
 
 const handleLogin = async () => {
