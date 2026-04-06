@@ -70,6 +70,7 @@ class SystemAuditTest extends TestCase
 
         // C) The Guest loads the Public Frontend News API Endpoint
         $publicResponse = $this->getJson('/api/news/ai-research-nsuk');
+        $publicResponse->dump();
         
         // Assert the guest can read the published article
         $publicResponse->assertStatus(200)
