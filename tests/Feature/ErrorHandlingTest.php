@@ -40,11 +40,11 @@ class ErrorHandlingTest extends TestCase
     public function test_api_500_crash_returns_json_payload(): void
     {
         // Define a temporary route that purposefully throws an Exception
-        Route::get('simulate-api-crash', function () {
+        Route::get('/api/simulate-api-crash', function () {
             throw new \Exception('Simulated API Server Crash for Testing');
         });
 
-        $response = $this->getJson('/simulate-api-crash');
+        $response = $this->getJson('/api/simulate-api-crash');
 
         // Assert we get a standard 500 error mapped by Laravel
         $response->assertStatus(500);
