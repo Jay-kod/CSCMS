@@ -20,18 +20,11 @@
           Please sign in to securely manage departmental data, students, courses, and announcements.
         </p>
       </div>
-
-      <div class="relative z-10 mt-auto pt-16">
-        <router-link to="/" class="inline-flex items-center text-blue-200 hover:text-white font-medium transition-colors group">
-          <svg class="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-          Return to Public Portal
-        </router-link>
-      </div>
     </div>
 
     <!-- Right Side: Login Form -->
-    <div class="md:w-1/2 w-full flex items-center justify-center p-8 sm:p-12 relative overflow-y-auto" data-aos="fade-left">
-      <div class="max-w-md w-full space-y-8 bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border border-gray-100">
+    <div class="md:w-1/2 w-full flex items-center justify-center p-8 sm:p-12 relative" data-aos="fade-left">
+      <div class="max-w-md w-full space-y-6 bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border border-gray-100">
         <div class="text-center">
           <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 mb-4">
             <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
