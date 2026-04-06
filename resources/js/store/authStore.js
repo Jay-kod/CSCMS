@@ -17,27 +17,31 @@ export const useAuthStore = defineStore('auth', {
     actions: {
         async fetchUser() {
             try {
-                const response = await axios.get('/api/v1/auth/me');
-                this.user = response.data.data;
-                this.roles = response.data.data.roles;
+                const response = await axios.get('/api/auth/me');
+                this.user = response.data;
+                this.roles = response.data.roles.map(r => r.name);
             } catch (error) {
                 this.logout();
             }
         },
         
         async login(credentials) {
-            const response = await axios.post('/api/v1/auth/login', credentials);
-            this.token = response.data.auth.token;
+            const response = await axios.post('/api/auth/login', credentials);
+            this.token = response.data.token;
             localStorage.setItem('token', this.token);
-            await this.fetchUser();
             
             // Setup default auth header
             axios.defaults.headers.common['Authorization'] = `Bearer ${this.token}`;
+            
+            await this.fetchUser();
         },
         
         async logout() {
             try {
-                if (this.token) await axios.post('/api/v1/auth/logout');
+                if (this.token) {
+                    axios.defaults.headers.common['Authorization'] = `Bearer ${this.token}`;
+                    await axios.post('/api/auth/logout');
+                }
             } catch (error) {
                 // Ignore failure on backend, just clear locally
             }
