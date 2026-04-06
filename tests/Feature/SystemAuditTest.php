@@ -48,7 +48,10 @@ class SystemAuditTest extends TestCase
     public function test_full_lifecycle_content_publishing_and_guest_reaction()
     {
         // A) Create a Super Admin and act as them
-        $superAdmin = User::factory()->create();
+        $superAdmin = User::firstOrCreate(
+            ['email' => 'super@example.com'],
+            ['name' => 'Super Admin', 'password' => bcrypt('password')]
+        );
         $superAdmin->assignRole('super_admin');
 
         // B) Super Admin publishes a news article to the backend
