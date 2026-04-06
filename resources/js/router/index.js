@@ -63,28 +63,24 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-    // Assuming authStore logic will be hooked in here
-    // For now we setup the systematic guard structure to avoid collisions
+    const token = localStorage.getItem('token');
     
-    // Prevent logged-in users from hitting login pages again
-    const isAuthenticated = localStorage.getItem('token');
-    
+    // 1. Prevent authorized users from seeing the login screen again
     if (to.name === 'admin.login' || to.name === 'super-admin.login') {
-        if (isAuthenticated) {
-            // They are already logged in, push them to their respective dashboard
-            // depending on what their role actually is
-            // For now, default fallback:
+        if (token) {
+            // Ideally we check their role inside authStore here, but for now we push back
             return next('/');
         }
     }
 
-    // Require Auth for Admin / Super Admin routes
-    if (to.path.startsWith('/admin') && to.name !== 'admin.login') {
-        if (!isAuthenticated) return next({ name: 'admin.login' });
+    // 2. Prevent Public Guests from hitting /admin/* endpoints (Redirect them to their specific login)
+    if (to.path.startsWith('/admin') && !to.path.startsWith('/admin/login') && !token) {
+        return next({ name: 'admin.login' });
     }
     
-    if (to.path.startsWith('/super-admin') && to.name !== 'super-admin.login') {
-        if (!isAuthenticated) return next({ name: 'super-admin.login' });
+    // 3. Prevent Public Guests from hitting /super-admin/* endpoints (Redirect them to their specific login)
+    if (to.path.startsWith('/super-admin') && !to.path.startsWith('/super-admin/login') && !token) {
+        return next({ name: 'super-admin.login' });
     }
 
     next();
