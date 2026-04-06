@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{any}', function () {
+Route::fallback(function (\Illuminate\Http\Request $request) {
+    if ($request->is('api/*') || $request->wantsJson()) {
+        // Return a proper JSON 404 response for API requests
+        return response()->json(['message' => 'Not Found.'], 404);
+    }
+    
     return view('welcome');
-})->where('any', '^(?!api|simulate).*$');
+});
