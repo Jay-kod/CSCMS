@@ -76,13 +76,13 @@
             </div>
           </div>
 
-          <div class="flex items-center justify-between pt-2">
-            <div class="flex items-center gap-2">
+          <div class="flex items-center justify-between pt-2 px-1">
+            <label class="label cursor-pointer justify-start gap-2 p-0">
               <input id="remember-me" name="remember-me" type="checkbox" class="checkbox checkbox-primary checkbox-sm border-gray-300" />
-              <label for="remember-me" class="block text-sm text-gray-700 cursor-pointer">
+              <span class="label-text text-gray-700">
                 Keep me logged in
-              </label>
-            </div>
+              </span>
+            </label>
 
             <div class="text-sm">
               <a href="#" class="font-bold text-primary hover:text-green-700 transition">
