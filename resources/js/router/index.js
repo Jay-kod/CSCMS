@@ -34,7 +34,8 @@ const routes = [
             { path: 'news/:slug', name: 'public.news.show', component: NewsArticle }
         ]
     },
-    { path: '/login', name: 'login', component: Login },
+    { path: '/admin/login', name: 'admin.login', component: Login, props: { type: 'Department Admin' } },
+    { path: '/super-admin/login', name: 'super-admin.login', component: Login, props: { type: 'Super Admin' } },
     {
         path: '/super-admin',
         component: SuperAdminLayout,
