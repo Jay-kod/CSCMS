@@ -30,7 +30,7 @@
     </div>
 
     <!-- Right Side: Login Form -->
-    <div class="md:w-1/2 w-full flex items-center justify-center p-8 sm:p-12 relative" data-aos="fade-left">
+    <div class="md:w-1/2 w-full flex items-center justify-center p-8 sm:p-12 relative overflow-y-auto" data-aos="fade-left">
       <div class="max-w-md w-full space-y-8 bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border border-gray-100">
         <div class="text-center">
           <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 mb-4">
