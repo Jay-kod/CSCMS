@@ -15,7 +15,7 @@ class ErrorHandlingTest extends TestCase
     public function test_api_404_returns_standard_json(): void
     {
         $response = $this->getJson('/api/this-endpoint-does-not-exist');
-
+        dump($response->getContent());
         // Assert we get a standard 404
         $response->assertStatus(404);
         
