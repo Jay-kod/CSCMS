@@ -11,7 +11,7 @@
         
         <!-- Push to bottom -->
         <div class="pt-8">
-            <router-link :to="{ name: 'login' }" class="block px-4 py-3 rounded bg-red-100 text-red-700 hover:bg-red-600 hover:text-white transition">Sign Out</router-link>
+            <router-link to="/admin/login" class="block px-4 py-3 rounded bg-red-100 text-red-700 hover:bg-red-600 hover:text-white transition">Sign Out</router-link>
         </div>
       </nav>
     </aside>
