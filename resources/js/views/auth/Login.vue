@@ -31,7 +31,7 @@
           </div>
           
           <div class="space-y-3 font-mono text-sm">
-            <div class="flex justify-between items-center bg-black/20 p-3 rounded-lg hover:bg-black/30 transition border border-transparent hover:border-white/10">
+            <div v-if="type === 'Super Admin'" class="flex justify-between items-center bg-black/20 p-3 rounded-lg hover:bg-black/30 transition border border-transparent hover:border-white/10">
               <div>
                 <p class="text-blue-200 text-xs font-sans mb-1 uppercase tracking-widest font-bold">Super Admin</p>
                 <div class="text-white text-base">admin@nsuk.edu.ng</div>
@@ -43,7 +43,7 @@
               </button>
             </div>
             
-            <div class="flex justify-between items-center bg-black/20 p-3 rounded-lg hover:bg-black/30 transition border border-transparent hover:border-white/10">
+            <div v-if="type === 'Department Admin' || type === 'Administrative'" class="flex justify-between items-center bg-black/20 p-3 rounded-lg hover:bg-black/30 transition border border-transparent hover:border-white/10">
               <div>
                 <p class="text-blue-200 text-xs font-sans mb-1 uppercase tracking-widest font-bold">Dept Admin</p>
                 <div class="text-white text-base">dept@nsuk.edu.ng</div>
