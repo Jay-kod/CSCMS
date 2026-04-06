@@ -246,15 +246,6 @@
         </RouterLink>
 
         <!-- Mobile Student Portal Button -->
-        <div class="p-4 mt-2">
-          <a href="https://portal.nsuk.edu.ng" target="_blank" rel="noopener noreferrer"
-             class="flex w-full justify-center items-center gap-2 bg-[#1E7A3E] text-white text-sm font-medium px-4 py-3 rounded-lg hover:bg-[#165a2d] transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E7A3E] focus:ring-offset-2">
-            Student Portal
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
-        </div>
       </div>
     </div>
   </nav>
