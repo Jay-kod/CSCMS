@@ -43,20 +43,18 @@
               <label class="label">
                 <span class="label-text font-bold text-gray-700">Email Address</span>
               </label>
-              <div class="relative">
-                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <svg class="h-5 w-5 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                </div>
+              <label class="input flex items-center gap-3 w-full bg-blue-50/50 border border-gray-200">
+                <svg class="h-5 w-5 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
                 <input 
                   type="email" 
                   v-model="form.email" 
                   required 
-                  class="input input-bordered w-full pl-10 focus:border-primary focus:ring-primary shadow-sm" 
+                  class="grow placeholder-gray-400 bg-transparent text-gray-800" 
                   placeholder="admin@nsuk.edu.ng"
                 />
-              </div>
+              </label>
             </div>
             
             <div class="form-control">
