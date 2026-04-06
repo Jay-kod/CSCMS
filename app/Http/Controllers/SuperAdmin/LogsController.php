@@ -8,4 +8,8 @@ use Illuminate\Http\Request;
 class LogsController extends Controller
 {
     //
+
+    public function index() {
+        return response()->json([]);
+    }
 }

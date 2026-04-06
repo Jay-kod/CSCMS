@@ -16,4 +16,8 @@ class NewsController extends Controller
             'data' => $news
         ]);
     }
+
+    public function index() {
+        return response()->json([]);
+    }
 }

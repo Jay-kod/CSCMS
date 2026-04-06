@@ -26,4 +26,29 @@ class GuestEngagementController extends Controller
 
         return response()->json(['message' => 'Reaction recorded'], 200);
     }
+
+    public function settings() {
+        return response()->json([]);
+    }
+    public function heroBanners() {
+        return response()->json([]);
+    }
+    public function calendar() {
+        return response()->json([]);
+    }
+    public function fypTopics() {
+        return response()->json([]);
+    }
+    public function reactions() {
+        return response()->json([]);
+    }
+    public function comments() {
+        return response()->json([]);
+    }
+    public function postComment() {
+        return response()->json([]);
+    }
+    public function siwesDocuments() {
+        return response()->json([]);
+    }
 }
