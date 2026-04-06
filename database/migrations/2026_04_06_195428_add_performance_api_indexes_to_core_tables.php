@@ -28,7 +28,9 @@ return new class extends Migration
         });
 
         Schema::table('programmes', function (Blueprint $table) {
-            $table->index('slug');
+            if (Schema::hasColumn('programmes', 'slug')) {
+                $table->index('slug');
+            }
         });
 
         Schema::table('courses', function (Blueprint $table) {
