@@ -139,20 +139,6 @@
             </button>
           </div>
 
-          <!-- Demo Credentials Helper -->
-          <div class="mt-6 border-t border-gray-100 pt-6">
-            <p class="text-sm text-gray-500 text-center mb-4">For testing purposes:</p>
-            <div class="flex justify-center">
-              <button 
-                type="button" 
-                @click="fillDemoCredentials" 
-                class="btn btn-outline btn-sm btn-secondary hover:text-white"
-              >
-                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                Auto-Fill {{ type }} Demo
-              </button>
-            </div>
-          </div>
         </form>
       </div>
     </div>
