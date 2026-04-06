@@ -4,7 +4,7 @@
       <div class="text-center">
         <h2 class="text-3xl font-extrabold text-primary font-serif tracking-tight">NSUK CS Portal</h2>
         <p class="mt-3 text-sm text-gray-500 font-sans">
-          Sign in to access your administrative dashboard
+          Sign in to access your <span class="font-bold text-green-700">{{ type || 'administrative' }}</span> dashboard
         </p>
       </div>
       
@@ -32,7 +32,7 @@
               v-model="form.password" 
               required 
               class="input input-bordered w-full focus:border-primary focus:ring-primary" 
-              placeholder="••••••••"
+              placeholder="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
             />
           </div>
         </div>
