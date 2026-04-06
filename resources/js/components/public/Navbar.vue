@@ -127,13 +127,6 @@
       </div>
 
       <!-- STUDENT PORTAL BUTTON (desktop) -->
-      <a href="https://portal.nsuk.edu.ng" target="_blank" rel="noopener noreferrer"
-         class="hidden md:flex ml-4 bg-white text-[#1E7A3E] text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1E7A3E] items-center gap-1">
-        Student Portal 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg>
-      </a>
 
       <!-- HAMBURGER (mobile only) -->
       <button @click="toggleDrawer" aria-label="Toggle Menu" class="md:hidden p-2 text-white rounded-md hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white">
