@@ -39,6 +39,9 @@ class ApiHealthTest extends TestCase
             // We expect endpoints to return 200, 422 (validation errors), 
             // 401 (unauthorized), 403 (forbidden), or 404 (not found).
             // We DO NOT expect a 500 (Server Error) normally caused by missing methods or fatal DB errors.
+            if ($response->status() >= 500) {
+                dump("The API Endpoint [{$method}] {$url} returned a 500 Server Error.");
+            }
             $this->assertLessThan(
                 500, 
                 $response->status(), 
