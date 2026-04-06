@@ -2,7 +2,7 @@
   <div class="h-screen overflow-hidden flex flex-col md:flex-row bg-gray-50">
     
     <!-- Left Side: Welcome Graphic/Message (Hidden on very small screens, visible on md and up) -->
-    <div class="md:w-1/2 bg-primary text-white flex flex-col justify-center px-8 py-16 md:px-16 space-y-6 relative overflow-hidden" data-aos="fade-right">
+    <div class="hidden md:w-1/2 bg-primary text-white md:flex flex-col justify-center px-8 py-16 md:px-16 space-y-6 relative overflow-hidden" data-aos="fade-right">
       <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
       
       <div class="relative z-10">
