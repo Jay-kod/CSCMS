@@ -81,9 +81,9 @@
           </div>
 
           <div class="flex items-center justify-between pt-2">
-            <div class="flex items-center">
+            <div class="flex items-center gap-2">
               <input id="remember-me" name="remember-me" type="checkbox" class="checkbox checkbox-primary checkbox-sm border-gray-300" />
-              <label for="remember-me" class="ml-2 block text-sm text-gray-700">
+              <label for="remember-me" class="block text-sm text-gray-700 cursor-pointer">
                 Keep me logged in
               </label>
             </div>
@@ -98,7 +98,7 @@
           <div class="pt-4">
             <button 
               type="submit" 
-              class="btn btn-primary w-full shadow-lg text-white font-bold text-lg h-12" 
+              class="btn bg-primary hover:bg-green-800 text-white border-none w-full shadow-md font-bold text-lg h-12" 
               :disabled="loading"
             >
               <span v-if="loading" class="loading loading-spinner loading-md"></span>
