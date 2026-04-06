@@ -180,36 +180,32 @@ const loading = ref(false);
 const handleLogin = async () => {
     loading.value = true;
     
-    // Simulate real API timing
-    setTimeout(async () => {
-        try {
-            // Uncomment to use real logic:
-            // await authStore.login(form.value);
-            
-            // Dummy logic for demonstration
-            if (form.value.email === "admin@nsuk.edu.ng") {
-                window.Swal.fire({
-                    icon: 'success',
-                    title: 'Welcome Back',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-                // Route simulation
-                router.push("/super-admin");
-            } else if (form.value.email === "dept@nsuk.edu.ng") {
-                router.push("/admin");
-            } else {
-                router.push("/super-admin");
-            }
-        } catch (error) {
-            window.Swal.fire({
-                icon: 'error',
-                title: 'Authentication Failed',
-                text: 'Invalid email or password. Please try again.'
-            });
-        } finally {
-            loading.value = false;
+    try {
+        await authStore.login(form.value);
+        
+        window.Swal.fire({
+            icon: 'success',
+            title: 'Welcome Back',
+            showConfirmButton: false,
+            timer: 1500
+        });
+
+        // Route according to their actual role that was returned
+        if (authStore.roles.includes('super_admin') || authStore.roles.includes('Super Admin')) {
+            router.push("/super-admin");
+        } else if (authStore.roles.includes('dept_admin') || authStore.roles.includes('Department Admin')) {
+            router.push("/admin");
+        } else {
+            router.push("/super-admin"); // fallback
         }
-    }, 1200);
+    } catch (error) {
+        window.Swal.fire({
+            icon: 'error',
+            title: 'Authentication Failed',
+            text: error.response?.data?.message || 'Invalid email or password. Please try again.'
+        });
+    } finally {
+        loading.value = false;
+    }
 };
 </script>
