@@ -34,7 +34,7 @@
           <router-link :to="{ name: 'public.about' }" @click="mobileMenuOpen = false" class="text-white hover:text-secondary py-2 border-b border-blue-800">About</router-link>
           <router-link :to="{ name: 'public.academics' }" @click="mobileMenuOpen = false" class="text-white hover:text-secondary py-2 border-b border-blue-800">Academics</router-link>
           <router-link :to="{ name: 'public.contact' }" @click="mobileMenuOpen = false" class="text-white hover:text-secondary py-2 border-b border-blue-800">Contact</router-link>
-          <router-link to="/login" @click="mobileMenuOpen = false" class="bg-secondary text-primary text-center px-6 py-3 mt-2 rounded-md font-bold shadow-md inline-block">Portal / Login</router-link>
+          <router-link to="/admin/login" @click="mobileMenuOpen = false" class="bg-secondary text-primary text-center px-6 py-3 mt-2 rounded-md font-bold shadow-md inline-block">Portal / Login</router-link>
         </div>
       </div>
     </nav>
