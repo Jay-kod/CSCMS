@@ -78,9 +78,9 @@
 
           <div class="flex items-center justify-between pt-2 px-1">
             <div class="form-control">
-              <label class="label cursor-pointer gap-2 p-0">
-                <input type="checkbox" class="checkbox checkbox-primary" />
-                <span class="label-text text-gray-700 font-medium">Keep me logged in</span>
+              <label class="flex items-center cursor-pointer gap-2 p-0">
+                <input type="checkbox" class="w-4 h-4 rounded border-gray-300 accent-primary cursor-pointer" />
+                <span class="text-sm text-gray-700 font-medium">Keep me logged in</span>
               </label>
             </div>
 
