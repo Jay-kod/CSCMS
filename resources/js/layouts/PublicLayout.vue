@@ -8,12 +8,33 @@
           </div>
           
           <div class="hidden md:flex space-x-8 font-medium items-center">
-            <router-link to="/" class="hover:text-secondary text-white">Home</router-link>
-            <router-link to="#" class="hover:text-secondary text-white">About</router-link>
-            <router-link to="#" class="hover:text-secondary text-white">Academics</router-link>
-            <router-link to="#" class="hover:text-secondary text-white">News & Events</router-link>
-            <router-link to="/login" class="bg-secondary text-primary px-6 py-2 rounded-full font-bold hover:bg-yellow-400">Portal / Login</router-link>
+            <router-link to="/" class="hover:text-secondary text-white transition-colors">Home</router-link>
+            <router-link :to="{ name: 'public.about' }" class="hover:text-secondary text-white transition-colors">About</router-link>
+            <router-link :to="{ name: 'public.academics' }" class="hover:text-secondary text-white transition-colors">Academics</router-link>
+            <router-link :to="{ name: 'public.contact' }" class="hover:text-secondary text-white transition-colors">Contact</router-link>
+            <router-link to="/login" class="bg-secondary text-primary px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition-colors">Portal / Login</router-link>
           </div>
+          
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-white hover:text-secondary focus:outline-none">
+              <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path v-if="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation Panel -->
+      <div v-if="mobileMenuOpen" class="md:hidden bg-primary border-t border-blue-900 pb-4 pt-2 px-4 shadow-inner">
+        <div class="flex flex-col space-y-4 font-medium mt-2">
+          <router-link to="/" @click="mobileMenuOpen = false" class="text-white hover:text-secondary py-2 border-b border-blue-800">Home</router-link>
+          <router-link :to="{ name: 'public.about' }" @click="mobileMenuOpen = false" class="text-white hover:text-secondary py-2 border-b border-blue-800">About</router-link>
+          <router-link :to="{ name: 'public.academics' }" @click="mobileMenuOpen = false" class="text-white hover:text-secondary py-2 border-b border-blue-800">Academics</router-link>
+          <router-link :to="{ name: 'public.contact' }" @click="mobileMenuOpen = false" class="text-white hover:text-secondary py-2 border-b border-blue-800">Contact</router-link>
+          <router-link to="/login" @click="mobileMenuOpen = false" class="bg-secondary text-primary text-center px-6 py-3 mt-2 rounded-md font-bold shadow-md inline-block">Portal / Login</router-link>
         </div>
       </div>
     </nav>
