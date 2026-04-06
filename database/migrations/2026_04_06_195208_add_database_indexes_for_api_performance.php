@@ -10,58 +10,52 @@ return new class extends Migration
     {
         // Add highly performant composite and single indexes for the CMS APIs
         
-        Schema::table('news', function (Blueprint \) {
+        Schema::table('news', function (Blueprint $table) {
             // Accelerate public news fetching when filtering published items by slug or chronologically
-            \->index(['slug', 'is_published']);
-            \->index(['is_published', 'created_at']);
+            $table->index(['slug', 'is_published']);
+            $table->index(['is_published', 'created_at']);
         });
 
-        Schema::table('events', function (Blueprint \) {
+        Schema::table('events', function (Blueprint $table) {
             // Assuming events table has slug and is_published. If it crashes in migration, I'll revise.
             if (Schema::hasColumn('events', 'slug') && Schema::hasColumn('events', 'is_published')) {
-                \->index(['slug', 'is_published']);
+                $table->index(['slug', 'is_published']);
             }
         });
 
-        Schema::table('sub_departments', function (Blueprint \) {
+        Schema::table('sub_departments', function (Blueprint $table) {
             if (Schema::hasColumn('sub_departments', 'slug')) {
-                \->index('slug');
+                $table->index('slug');
             }
         });
 
-        Schema::table('programmes', function (Blueprint \) {
+        Schema::table('programmes', function (Blueprint $table) {
             if (Schema::hasColumn('programmes', 'slug')) {
-                \->index('slug');
+                $table->index('slug');
             }
         });
 
-        Schema::table('courses', function (Blueprint \) {
+        Schema::table('courses', function (Blueprint $table) {
             if (Schema::hasColumn('courses', 'programme_id')) {
-                \->index('programme_id');
+                $table->index('programme_id');
             }
         });
         
-        Schema::table('staff', function (Blueprint \) {
-            // Speed up staff filtering by department or sub_department
-            if (Schema::hasColumn('staff', 'department_id')) \->index('department_id');
-            if (Schema::hasColumn('staff', 'sub_department_id')) \->index('sub_department_id');
+        Schema::table('staff', function (Blueprint $table) {
+            if (Schema::hasColumn('staff', 'department_id')) $table->index('department_id');
+            if (Schema::hasColumn('staff', 'sub_department_id')) $table->index('sub_department_id');
         });
         
-        Schema::table('hero_banners', function (Blueprint \) {
-            // Speed up front-page banner fetches
-            if (Schema::hasColumn('hero_banners', 'is_active')) {
-                \->index('is_active');
-            }
+        Schema::table('hero_banners', function (Blueprint $table) {
+            if (Schema::hasColumn('hero_banners', 'is_active')) $table->index('is_active');
         });
     }
 
     public function down(): void
     {
-        Schema::table('news', function (Blueprint \) {
-            \->dropIndex(['slug', 'is_published']);
-            \->dropIndex(['is_published', 'created_at']);
+        Schema::table('news', function (Blueprint $table) {
+            $table->dropIndex(['slug', 'is_published']);
+            $table->dropIndex(['is_published', 'created_at']);
         });
-        
-        // ... (Keep simple down logic since this is mostly additive)
     }
 };
