@@ -148,7 +148,7 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-// import { useAuthStore } from "../../stores/auth";
+import { useAuthStore } from "../../stores/auth";
 
 const props = defineProps({
     type: {
@@ -158,7 +158,7 @@ const props = defineProps({
 });
 
 const router = useRouter();
-// const authStore = useAuthStore();
+const authStore = useAuthStore();
 
 const form = ref({
     email: "",
