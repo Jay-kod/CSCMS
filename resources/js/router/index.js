@@ -28,9 +28,20 @@ const routes = [
         component: PublicLayout,
         children: [
             { path: '', name: 'home', component: Home },
-            { path: 'about', name: 'public.about', component: About },
-            { path: 'academics', name: 'public.academics', component: Academics },
-            { path: 'contact', name: 'public.contact', component: Contact },
+            { path: 'about', name: 'about', component: About },
+            { path: 'about/vision-mission', name: 'about.vision', component: About },
+            { path: 'about/hod-message', name: 'about.hod', component: About },
+            { path: 'about/association', name: 'about.association', component: About },
+            { path: 'academics', name: 'academics', component: Academics },
+            { path: 'academics/programmes', name: 'academics.programmes', component: Academics },
+            { path: 'academics/:slug', name: 'academics.subdept', component: Academics },
+            { path: 'academics/siwes', name: 'academics.siwes', component: Academics },
+            { path: 'academics/fyp', name: 'academics.fyp', component: Academics },
+            { path: 'people/staff', name: 'people.staff', component: Home }, // placeholder
+            { path: 'contact', name: 'contact', component: Contact },
+            { path: 'news', name: 'news.index', component: Home }, // placeholder
+            { path: 'events', name: 'events.index', component: Home }, // placeholder
+            { path: 'calendar', name: 'calendar', component: Home }, // placeholder
             { path: 'news/:slug', name: 'public.news.show', component: NewsArticle }
         ]
     },
