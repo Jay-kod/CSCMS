@@ -1,66 +1,152 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1 align="center">NSUK Department of Computer Science CMS</h1>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <strong>A modern, headless-style Laravel 11 & Vue 3 Content Management System for Nasarawa State University, Keffi.</strong>
 </p>
 
-## About Laravel
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel" alt="Laravel">
+  <img src="https://img.shields.io/badge/Vue.js-3-4FC08D?style=for-the-badge&logo=vue.js" alt="Vue 3">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker" alt="Docker">
+  <img src="https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge" alt="Status">
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📖 Overview
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The **NSUK Computer Science CMS** is a comprehensive, full-stack web application designed to manage the department's public presence and internal data workflows. Built on the bleeding edge of PHP and JavaScript ecosystems, it features a **Headless API architecture** serving a blazing fast **Single Page Application (SPA)**.
 
-## Learning Laravel
+From managing student reading materials and displaying complex academic hierarchies (HODs, Staff, Programs), to publishing real-time news and interacting with guests, the system provides an intuitive experience for users and deep administrative controls.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ✨ Key Features
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🏢 Department & Association Management
+- Complete hierarchy support: Department -> Sub-Departments -> Programmes -> Courses -> Resources.
+- Detailed Staff and Head of Department (HOD) profile management.
+- Dynamic FYP (Final Year Project) and SIWES documentation repositories.
+- Dedicated scopes for **Student Association (NACOSS)** executives, gallery, and news.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 📰 Dynamic News & Content Engine
+- Admin rich-text content publishing for News, Events, and Announcements.
+- Automated API endpoints for guest user **reactions** and **comments** tracking.
+- Dynamic Hero Banners and programmatic UI alerts via SweetAlerts.
 
-## Laravel Sponsors
+### 🔐 Powerful Authorization & Audit
+- **Strict Role-Based Access Control (RBAC):** Configured via Spatie explicitly for mapping `super_admin` vs `dept_admin` boundaries.
+- **API Token Authentication:** SPA state management authorized via Laravel Sanctum.
+- Global Action Logging & centralized System Setting controls.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### ⚡ Blazing Performance & UX
+- Redis-driven persistent query caching for instantaneous data delivery.
+- Background Jobs & Queues (Image Processing, Cache Busting) handled via Supervisor.
+- Built strictly **Mobile-First** natively verified via automated Tailwind layout tests.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 🛠 Tech Stack
 
-## Contributing
+**Backend (API & Services):**
+- PHP 8.3 / Laravel 11
+- MySQL (or SQLite for automated testing workflows)
+- Redis Server (Queues & Component Caching)
+- Laravel Sanctum (Stateless API Auth)
+- Spatie Permissions (RBAC) & Intervention Image
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**Frontend (SPA):**
+- Vue 3 (Composition API)
+- Vite (HMR Build Tooling)
+- Pinia (Centralized State Management)
+- Tailwind CSS & daisyUI component library
+- SweetAlert2 & Vue3 Toastify (Visual Notifications)
 
-## Code of Conduct
+**DevOps & Infrastructure:**
+- Docker & Docker Compose (Containerized Stacks)
+- Custom raw Nginx configs & Worker Supervisor hooks
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🚦 Getting Started (Local Development)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Follow these steps to set up the project on your local machine using standard artisan/npm combinations.
 
-## License
+### Prerequisites
+- PHP >= 8.2 & Composer
+- Node.js >= 18 & NPM
+- Redis (Optional, but recommended for Queues)
+- MySQL / SQLite
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Installation Process
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/nsuk-cscms.git
+   cd nsuk-cscms
+   ```
+
+2. **Install Backend Dependencies:**
+   ```bash
+   composer install
+   ```
+
+3. **Install Frontend Dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Environment Setup:**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+   *Edit `.env` to configure your specific database & redis connections.*
+
+5. **Run Migrations & Database Seeders:**
+   *(Note: This seeds the required Super Admin account and RBAC roles.)*
+   ```bash
+   php artisan migrate --seed
+   ```
+
+6. **Serve the Application:**
+   Spin up two terminals, one for Vite and one for Laravel:
+   ```bash
+   # Terminal 1 - Frontend Hot Module Reloading
+   npm run dev
+
+   # Terminal 2 - Backend API Server
+   php artisan serve
+   ```
+   *The application will now be available at `http://localhost:8000`.*
+
+---
+
+## 🧪 Automated Testing
+
+The platform maintains extensive programmatic regression barriers. It leverages dynamic analysis mapped to API endpoints and layout grids.
+
+```bash
+# Run the complete test suite
+php artisan test
+```
+
+**Key Test Suites Included:**
+- `Feature\ApiHealthTest`: Dynamically crawls and hits all 44+ API endpoints asserting safety against 500 fatal errors.
+- `Feature\MobileResponsivenessAuditTest`: Statically crawls `.vue` nodes globally ensuring Tailwind CSS mobile-first grid prefixes exist.
+- `Feature\SystemAuditTest`: Asserts lifecycle tests strictly simulating unauthorized admin privilege expansions and lifecycle content flows.
+- `Feature\ErrorHandlingTest`: Ensures JSON API standardization when unhandled code exceptions throw 500s or 404s.
+- `Feature\AlertConfirmationResponseTest`: Asserts strict Vue interceptor formatting mapped to Axios SweetAlerts.
+
+---
+
+## 🐳 Live Deployment & Docker
+
+The repository comes pre-packaged with production-ready `Dockerfile` and `docker-compose.yml` wrappers to auto-build Vue dists and configure Nginx / PHP-FPM without relying on local node environments on VPS instances.
+
+For comprehensive deployment instructions, Cloudflare SSL configurations, and Docker spinning details, refer to the **[DEPLOYMENT.md](DEPLOYMENT.md)** documentation.
+
+---
+
+## 📝 License
+
+The NSUK Department of Computer Science CMS is proprietary software built for the institution. External distributions require explicit educational clearances.
