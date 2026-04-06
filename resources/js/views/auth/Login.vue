@@ -20,6 +20,43 @@
           Please sign in to securely manage departmental data, students, courses, and announcements.
         </p>
       </div>
+
+      <div class="relative z-10 w-full max-w-lg mt-8">
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-xl transition-all">
+          <div class="flex items-center justify-between mb-4 border-b border-white/20 pb-3">
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547v-4.811L12.5 12l2.871-3.415a2 2 0 00.584-1.415v-5.17A2 2 0 0013.955 0h-4a2 2 0 00-2 2.002V7.17M8 4h8l-1 1v5.172"></path></svg>
+              <h3 class="text-xl font-bold font-serif text-white">Preview Test Logins</h3>
+            </div>
+          </div>
+          
+          <div class="space-y-3 font-mono text-sm">
+            <div class="flex justify-between items-center bg-black/20 p-3 rounded-lg hover:bg-black/30 transition border border-transparent hover:border-white/10">
+              <div>
+                <p class="text-blue-200 text-xs font-sans mb-1 uppercase tracking-widest font-bold">Super Admin</p>
+                <div class="text-white text-base">admin@nsuk.edu.ng</div>
+                <div class="text-white/70 text-xs mt-0.5 tracking-wider">Pass: password</div>
+              </div>
+              <button @click.prevent="form.email = 'admin@nsuk.edu.ng'; form.password = 'password'; handleLogin()" class="btn btn-sm bg-secondary border-none text-green-900 hover:bg-white font-bold w-24">
+                Login
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </button>
+            </div>
+            
+            <div class="flex justify-between items-center bg-black/20 p-3 rounded-lg hover:bg-black/30 transition border border-transparent hover:border-white/10">
+              <div>
+                <p class="text-blue-200 text-xs font-sans mb-1 uppercase tracking-widest font-bold">Dept Admin</p>
+                <div class="text-white text-base">dept@nsuk.edu.ng</div>
+                <div class="text-white/70 text-xs mt-0.5 tracking-wider">Pass: password</div>
+              </div>
+              <button @click.prevent="form.email = 'dept@nsuk.edu.ng'; form.password = 'password'; handleLogin()" class="btn btn-sm bg-secondary border-none text-green-900 hover:bg-white font-bold w-24">
+                Login
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Right Side: Login Form -->
