@@ -62,4 +62,32 @@ const router = createRouter({
     routes,
 });
 
+router.beforeEach((to, from, next) => {
+    // Assuming authStore logic will be hooked in here
+    // For now we setup the systematic guard structure to avoid collisions
+    
+    // Prevent logged-in users from hitting login pages again
+    const isAuthenticated = localStorage.getItem('token');
+    
+    if (to.name === 'admin.login' || to.name === 'super-admin.login') {
+        if (isAuthenticated) {
+            // They are already logged in, push them to their respective dashboard
+            // depending on what their role actually is
+            // For now, default fallback:
+            return next('/');
+        }
+    }
+
+    // Require Auth for Admin / Super Admin routes
+    if (to.path.startsWith('/admin') && to.name !== 'admin.login') {
+        if (!isAuthenticated) return next({ name: 'admin.login' });
+    }
+    
+    if (to.path.startsWith('/super-admin') && to.name !== 'super-admin.login') {
+        if (!isAuthenticated) return next({ name: 'super-admin.login' });
+    }
+
+    next();
+});
+
 export default router;
