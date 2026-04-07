@@ -197,10 +197,9 @@
     <!-- 7. NACOS (Gradient 165deg: #0f172a 0%, #1e293b 60%, #0f4c2e 100%) -->
     <section class="py-24 relative overflow-hidden" style="background: linear-gradient(165deg, #0f172a 0%, #1e293b 70%, #0f4c2e 100%);">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        <!-- Top Content -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-12">
-          <!-- Left Side: Title & About -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          
+          <!-- Left Side: Content -->
           <div class="space-y-8" data-aos="fade-right">
             <div>
               <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-[#112d22] border border-[#1e4835] text-[#4ade80] font-bold text-xs tracking-wider uppercase mb-6">
@@ -228,27 +227,8 @@
                 NACOS is the umbrella body for all computing students. We foster academic excellence, professional development, and social bonds among members through events, workshops, competitions, and community service.
               </p>
             </div>
-          </div>
 
-          <!-- Right Side: CTA Banner -->
-          <div class="space-y-6" data-aos="fade-left">
-             <div class="bg-[#174835] rounded-xl border border-[#246246] p-6 flex flex-row items-center justify-between group cursor-pointer hover:bg-[#1b553e] transition-colors shadow-xl">
-              <div>
-                <h4 class="text-white font-bold text-lg mb-1">Explore NACOS History</h4>
-                <p class="text-[#89bca5] text-sm group-hover:text-white transition-colors">See all past leaders, their tenure and achievements</p>
-              </div>
-              <div class="w-10 h-10 rounded-full bg-[#208759] flex flex-col items-center justify-center shrink-0 border border-[#2eb579]">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Content: Stats and Presidents -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          <!-- Left: Stats -->
-          <div data-aos="fade-up">
-            <h3 class="text-2xl font-bold text-white mb-6">NACOS by the Numbers</h3>
+            <!-- Stats -->
             <div class="grid grid-cols-3 gap-4">
               <div class="bg-[#1b2434] border border-[#2a384e] rounded-2xl p-4 text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-[#4ade80] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
@@ -268,9 +248,8 @@
             </div>
           </div>
 
-          <!-- Right: Presidents -->
-          <div data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-2xl font-bold text-white mb-6">Former Presidents</h3>
+          <!-- Right Side: Profiles & CTA -->
+          <div class="space-y-6" data-aos="fade-left">
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <!-- Card 1 (Habibat) -->
               <div class="bg-[#121c27] rounded-2xl overflow-hidden border border-[#1e2a3a] flex flex-col text-center shadow-lg relative group h-[290px]">
@@ -317,9 +296,20 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
+            <!-- CTA Banner -->
+            <div class="bg-[#174835] rounded-xl border border-[#246246] p-6 flex flex-row items-center justify-between group cursor-pointer hover:bg-[#1b553e] transition-colors shadow-xl">
+              <div>
+                <h4 class="text-white font-bold text-lg mb-1">Explore NACOS History</h4>
+                <p class="text-[#89bca5] text-sm group-hover:text-white transition-colors">See all past leaders, their tenure and achievements</p>
+              </div>
+              <div class="w-10 h-10 rounded-full bg-[#208759] flex flex-col items-center justify-center shrink-0 border border-[#2eb579]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
