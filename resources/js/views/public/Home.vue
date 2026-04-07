@@ -98,7 +98,7 @@
           <!-- Staff Card -->
           <div v-for="i in 4" :key="'staff'+i" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" :data-aos-delay="i*100">
             <div class="h-64 bg-gray-200 overflow-hidden relative">
-              <img :src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop&sig=" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Staff">
+              <img :src="`https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop&sig=${i}`" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Staff">
               <div class="absolute inset-0 bg-green-900/0 group-hover:bg-green-900/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                 <button class="bg-white text-green-800 px-4 py-2 rounded-lg font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Profile</button>
               </div>
