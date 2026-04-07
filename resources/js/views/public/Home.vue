@@ -221,7 +221,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <article v-for="i in 3" :key="'news'+i" class="bg-white rounded-2xl overflow-hidden border border-slate-100 hover:shadow-2xl transition-shadow duration-300 group" data-aos="fade-up" :data-aos-delay="i*100">
             <div class="overflow-hidden h-56">
-                <img :src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&auto=format&fit=crop&sig=" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="News Image">
+                <img :src="`https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&auto=format&fit=crop&sig=${i}`" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="News Image">
             </div>
             <div class="p-8">
               <span class="text-xs font-black text-green-700 uppercase tracking-widest mb-3 block">Hackathon {{ 2026 + i }}</span>
