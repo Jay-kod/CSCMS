@@ -49,13 +49,13 @@
       <!-- DESKTOP LINKS -->
       <nav class="hidden lg:flex items-center gap-1 z-50 shrink-0 h-full">
         <!-- Home -->
-        <RouterLink :to="{ name: 'home' }" class="text-gray-700 font-semibold text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-50 focus:outline-none" active-class="text-[#1E7A3E] bg-green-50">
+        <RouterLink :to="{ name: 'home' }" class="text-gray-700 font-semibold text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-100 focus:outline-none" active-class="text-[#1E7A3E] bg-green-100">
           Home
         </RouterLink>
 
         <!-- About dropdown -->
         <div class="relative group h-full flex items-center" @mouseenter="openDropdown('about')" @mouseleave="closeDropdown">
-          <button @click="toggleDropdown('about')" class="text-gray-700 font-semibold flex items-center text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-50 focus:outline-none gap-1" :class="{'text-[#1E7A3E] bg-green-50': activeDropdown === 'about' || isActiveGroup('about')}">
+          <button @click="toggleDropdown('about')" class="text-gray-700 font-semibold flex items-center text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-100 focus:outline-none gap-1" :class="{'text-[#1E7A3E] bg-green-100': activeDropdown === 'about' || isActiveGroup('about')}">
             About
             <svg xmlns="http://www.w3.org/2000/svg" class="h-[14px] w-[14px] transition-transform duration-200" :class="{'rotate-180': activeDropdown === 'about'}" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -80,7 +80,7 @@
 
         <!-- Academics dropdown -->
         <div class="relative group h-full flex items-center" @mouseenter="openDropdown('academics')" @mouseleave="closeDropdown">
-          <button @click="toggleDropdown('academics')" class="text-gray-700 font-semibold flex items-center text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-50 focus:outline-none gap-1" :class="{'text-[#1E7A3E] bg-green-50': activeDropdown === 'academics' || isActiveGroup('academics')}">
+          <button @click="toggleDropdown('academics')" class="text-gray-700 font-semibold flex items-center text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-100 focus:outline-none gap-1" :class="{'text-[#1E7A3E] bg-green-100': activeDropdown === 'academics' || isActiveGroup('academics')}">
             Academics
             <svg xmlns="http://www.w3.org/2000/svg" class="h-[14px] w-[14px] transition-transform duration-200" :class="{'rotate-180': activeDropdown === 'academics'}" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -115,7 +115,7 @@
 
         <!-- People dropdown -->
         <div class="relative group h-full flex items-center" @mouseenter="openDropdown('people')" @mouseleave="closeDropdown">
-          <button @click="toggleDropdown('people')" class="text-gray-700 font-semibold flex items-center text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-50 focus:outline-none gap-1" :class="{'text-[#1E7A3E] bg-green-50': activeDropdown === 'people' || isActiveGroup('people')}">
+          <button @click="toggleDropdown('people')" class="text-gray-700 font-semibold flex items-center text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-100 focus:outline-none gap-1" :class="{'text-[#1E7A3E] bg-green-100': activeDropdown === 'people' || isActiveGroup('people')}">
             People
             <svg xmlns="http://www.w3.org/2000/svg" class="h-[14px] w-[14px] transition-transform duration-200" :class="{'rotate-180': activeDropdown === 'people'}" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -131,7 +131,7 @@
 
         <!-- News dropdown -->
         <div class="relative group h-full flex items-center" @mouseenter="openDropdown('news')" @mouseleave="closeDropdown">
-          <button @click="toggleDropdown('news')" class="text-gray-700 font-semibold flex items-center text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-50 focus:outline-none gap-1" :class="{'text-[#1E7A3E] bg-green-50': activeDropdown === 'news' || isActiveGroup('news')}">
+          <button @click="toggleDropdown('news')" class="text-gray-700 font-semibold flex items-center text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-100 focus:outline-none gap-1" :class="{'text-[#1E7A3E] bg-green-100': activeDropdown === 'news' || isActiveGroup('news')}">
             News
             <svg xmlns="http://www.w3.org/2000/svg" class="h-[14px] w-[14px] transition-transform duration-200" :class="{'rotate-180': activeDropdown === 'news'}" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -152,7 +152,7 @@
         </div>
 
         <!-- Contact -->
-        <RouterLink :to="{ name: 'contact' }" class="text-gray-700 font-semibold text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-50 focus:outline-none" active-class="text-[#1E7A3E] bg-green-50">
+        <RouterLink :to="{ name: 'contact' }" class="text-gray-700 font-semibold text-[13.5px] px-3 py-2 rounded-md transition-colors hover:text-[#1E7A3E] hover:bg-green-100 focus:outline-none" active-class="text-[#1E7A3E] bg-green-100">
           Contact
         </RouterLink>
 
@@ -164,7 +164,7 @@
       <div class="flex flex-col py-2 relative">
         
         <!-- Mobile Home -->
-        <RouterLink :to="{ name: 'home' }" class="px-5 py-3 text-sm font-semibold text-gray-800 border-b border-gray-100 hover:bg-gray-50" active-class="text-[#1E7A3E] bg-green-50">
+        <RouterLink :to="{ name: 'home' }" class="px-5 py-3 text-sm font-semibold text-gray-800 border-b border-gray-100 hover:bg-gray-50" active-class="text-[#1E7A3E] bg-green-100">
           Home
         </RouterLink>
 
@@ -177,16 +177,16 @@
             </svg>
           </button>
           <div v-show="activeMobileMenu === 'about'" class="bg-gray-50 border-b border-gray-100 py-1">
-            <RouterLink :to="{ name: 'about' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'about' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> About the Department
             </RouterLink>
-            <RouterLink :to="{ name: 'about.vision' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'about.vision' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Vision &amp; Mission
             </RouterLink>
-            <RouterLink :to="{ name: 'about.hod' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'about.hod' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> HOD's Message
             </RouterLink>
-            <RouterLink :to="{ name: 'about.association' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'about.association' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Our Association
             </RouterLink>
           </div>
@@ -201,23 +201,23 @@
             </svg>
           </button>
           <div v-show="activeMobileMenu === 'academics'" class="bg-gray-50 border-b border-gray-100 py-1">
-            <RouterLink :to="{ name: 'academics.programmes' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'academics.programmes' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Programmes (BSc, MSc, PhD)
             </RouterLink>
             
             <div class="px-8 mt-2 mb-1 text-xs font-semibold text-gray-400 uppercase tracking-wider">Sub-departments</div>
-            <RouterLink :to="{ name: 'academics.subdept', params: { slug: 'cyber-security' } }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'academics.subdept', params: { slug: 'cyber-security' } }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Cyber Security
             </RouterLink>
-            <RouterLink :to="{ name: 'academics.subdept', params: { slug: 'data-science' } }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'academics.subdept', params: { slug: 'data-science' } }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Data Science
             </RouterLink>
 
             <div class="my-1 border-t border-gray-200 mx-5"></div>
-            <RouterLink :to="{ name: 'academics.siwes' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'academics.siwes' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> SIWES Information
             </RouterLink>
-            <RouterLink :to="{ name: 'academics.fyp' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'academics.fyp' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Final Year Projects
             </RouterLink>
           </div>
@@ -232,7 +232,7 @@
             </svg>
           </button>
           <div v-show="activeMobileMenu === 'people'" class="bg-gray-50 border-b border-gray-100 py-1">
-            <RouterLink :to="{ name: 'people.staff' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'people.staff' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Staff Directory
             </RouterLink>
           </div>
@@ -247,20 +247,20 @@
             </svg>
           </button>
           <div v-show="activeMobileMenu === 'news'" class="bg-gray-50 border-b border-gray-100 py-1">
-            <RouterLink :to="{ name: 'news.index' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'news.index' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> News &amp; Announcements
             </RouterLink>
-            <RouterLink :to="{ name: 'events.index' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'events.index' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Events &amp; Seminars
             </RouterLink>
-            <RouterLink :to="{ name: 'calendar' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-50/50">
+            <RouterLink :to="{ name: 'calendar' }" class="flex items-center gap-2 px-8 py-2.5 text-sm text-gray-600 hover:text-[#1E7A3E]" active-class="text-[#1E7A3E] font-medium bg-green-100/50">
               <span class="w-1 h-1 rounded-full bg-gray-400"></span> Academic Calendar
             </RouterLink>
           </div>
         </div>
 
         <!-- Mobile Contact -->
-        <RouterLink :to="{ name: 'contact' }" class="px-5 py-3 text-sm font-semibold text-gray-800 border-b border-gray-100 hover:bg-gray-50" active-class="text-[#1E7A3E] bg-green-50">
+        <RouterLink :to="{ name: 'contact' }" class="px-5 py-3 text-sm font-semibold text-gray-800 border-b border-gray-100 hover:bg-gray-50" active-class="text-[#1E7A3E] bg-green-100">
           Contact
         </RouterLink>
 
