@@ -195,56 +195,59 @@
     </section>
 
     <!-- 7. NACOS (Gradient 165deg: #0f172a 0%, #1e293b 60%, #0f4c2e 100%) -->
-    <section class="py-24 relative overflow-hidden" style="background: linear-gradient(165deg, #0f172a 0%, #1e293b 70%, #0f4c2e 100%);">
+    <section class="py-24 relative overflow-hidden bg-[#16202c]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           
           <!-- Left Side: Content -->
           <div class="space-y-8" data-aos="fade-right">
             <div>
-              <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-[#112d22] border border-[#1e4835] text-[#4ade80] font-bold text-xs tracking-wider uppercase mb-6">
-                <!-- Users Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354A4 4 0 1115.354 12H8.646A4 4 0 1112 4.354z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 20h14v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2z" /></svg>
+              <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-[#112d22]/80 border border-[#1e4835]/50 text-[#4ade80] font-bold text-[11px] tracking-widest uppercase mb-6">
+                <!-- User Profile Outline Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
                 Student Association
               </span>
-              <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4">NACOS</h2>
-              <p class="text-[17px] text-slate-300 leading-relaxed max-w-lg mb-8">
+              <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 font-serif">NACOS</h2>
+              <p class="text-[17px] text-slate-300 leading-relaxed max-w-md mb-8">
                 The National Association of Computing Students (NUK Chapter) — empowering students through leadership, innovation and community.
               </p>
             </div>
 
             <!-- About Card -->
-            <div class="bg-[#1b2434] border border-[#2a384e] rounded-2xl p-6">
+            <div class="bg-[#1b2533] border border-[#273549] rounded-2xl p-6 shadow-sm">
               <div class="flex items-center gap-4 mb-4">
-                <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center shrink-0">
+                <div class="w-12 h-12 bg-[#22c55e] rounded-xl flex items-center justify-center shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                 </div>
                 <div>
-                  <h3 class="text-white font-bold text-lg">About NACOS</h3>
+                  <h3 class="text-white font-bold text-[19px] font-serif">About NACOS</h3>
                   <p class="text-slate-400 text-sm">NUK Chapter</p>
                 </div>
               </div>
-              <p class="text-slate-300 text-sm leading-relaxed">
+              <p class="text-slate-300 text-[15px] leading-relaxed">
                 NACOS is the umbrella body for all computing students. We foster academic excellence, professional development, and social bonds among members through events, workshops, competitions, and community service.
               </p>
             </div>
 
             <!-- Stats -->
             <div class="grid grid-cols-3 gap-4">
-              <div class="bg-[#1b2434] border border-[#2a384e] rounded-2xl p-4 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-[#4ade80] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
-                <div class="text-2xl font-bold text-white mb-1">5</div>
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Past Leaders</div>
+              <div class="bg-[#1b2533] border border-[#273549] rounded-2xl p-5 text-center">
+                <!-- Sparkles -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-[#4ade80] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+                <div class="text-[26px] font-bold text-white mb-1">5</div>
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Past Leaders</div>
               </div>
-              <div class="bg-[#1b2434] border border-[#2a384e] rounded-2xl p-4 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-[#4ade80] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                <div class="text-2xl font-bold text-white mb-1">50+</div>
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Events Hosted</div>
+              <div class="bg-[#1b2533] border border-[#273549] rounded-2xl p-5 text-center">
+                <!-- Calendar -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-[#4ade80] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                <div class="text-[26px] font-bold text-white mb-1">50+</div>
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Events Hosted</div>
               </div>
-              <div class="bg-[#1b2434] border border-[#2a384e] rounded-2xl p-4 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-[#4ade80] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
-                <div class="text-2xl font-bold text-white mb-1">500+</div>
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Active Members</div>
+              <div class="bg-[#1b2533] border border-[#273549] rounded-2xl p-5 text-center">
+                <!-- Academic Cap -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-[#4ade80] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
+                <div class="text-[26px] font-bold text-white mb-1">500+</div>
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active Members</div>
               </div>
             </div>
           </div>
@@ -253,29 +256,29 @@
           <div class="space-y-6" data-aos="fade-left">
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <!-- Card 1 (Habibat) -->
-              <div class="bg-[#121c27] rounded-2xl overflow-hidden border border-[#1e2a3a] flex flex-col text-center shadow-lg relative group h-[290px]">
-                <div class="w-full h-44 relative">
-                  <img src="https://images.unsplash.com/photo-1531123897727-8f129e1bf98c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover">
-                  <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#121c27] to-transparent"></div>
+              <div class="bg-[#131b26] rounded-xl overflow-hidden border border-[#223043] flex flex-col text-center shadow-lg relative group h-[320px]">
+                <div class="w-full h-52 relative">
+                  <img src="https://images.unsplash.com/photo-1531123897727-8f129e1bf98c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
+                  <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#131b26] to-transparent"></div>
                 </div>
-                <div class="px-2 pb-5 mt-[-1.5rem] relative z-10 flex flex-col items-center justify-end h-full">
-                  <h4 class="text-white font-extrabold text-sm mb-3">Miss. Habibat</h4>
-                  <div class="inline-block px-3 py-1 border border-[#1b3b2c] rounded-full mb-3">
+                <div class="px-2 pb-6 mt-[-1rem] relative z-10 flex flex-col items-center justify-end h-full">
+                  <h4 class="text-white font-bold text-base mb-4 font-serif">Miss. Habibat</h4>
+                  <div class="inline-flex items-center px-4 py-1.5 border border-[#183a2d] rounded-full mb-3 bg-[#112a20]/50">
                     <span class="text-[#4ade80] text-[10px] font-bold">2025 &ndash; Present</span>
                   </div>
-                  <p class="text-[9px] font-bold tracking-widest text-[#3b82f6] uppercase uppercase">&bull; Current President &bull;</p>
+                  <p class="text-[9px] font-bold tracking-widest text-[#3b82f6] uppercase">&bull; Current President &bull;</p>
                 </div>
               </div>
 
               <!-- Card 2 (Kefas Bukus) -->
-              <div class="bg-[#121c27] rounded-2xl overflow-hidden border border-[#1e2a3a] flex flex-col text-center shadow-lg relative group h-[290px]">
-                <div class="w-full h-44 relative">
-                  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale">
-                  <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#121c27] to-transparent"></div>
+              <div class="bg-[#131b26] rounded-xl overflow-hidden border border-[#223043] flex flex-col text-center shadow-lg relative group h-[320px]">
+                <div class="w-full h-52 relative">
+                  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
+                  <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#131b26] to-transparent"></div>
                 </div>
-                <div class="px-2 pb-5 mt-[-1.5rem] relative z-10 flex flex-col items-center justify-end h-full">
-                  <h4 class="text-white font-extrabold text-sm mb-3">Mr. K. Kefas Bukus</h4>
-                  <div class="inline-block px-3 py-1 border border-[#1b3b2c] rounded-full mb-3">
+                <div class="px-2 pb-6 mt-[-1rem] relative z-10 flex flex-col items-center justify-end h-full">
+                  <h4 class="text-white font-bold text-base mb-4 font-serif">Mr. K. Kefas Bukus</h4>
+                  <div class="inline-flex items-center px-4 py-1.5 border border-[#183a2d] rounded-full mb-3 bg-[#112a20]/50">
                     <span class="text-[#4ade80] text-[10px] font-bold">2024 &ndash; 2025</span>
                   </div>
                   <p class="text-[9px] font-bold tracking-widest text-[#eab308] uppercase">&bull; Just Graduated &bull;</p>
@@ -283,14 +286,14 @@
               </div>
 
               <!-- Card 3 (Mulka III) -->
-              <div class="bg-[#121c27] rounded-2xl overflow-hidden border border-[#1e2a3a] flex flex-col text-center shadow-lg relative group h-[290px]">
-                <div class="w-full h-44 relative">
-                  <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover">
-                  <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#121c27] to-transparent"></div>
+              <div class="bg-[#131b26] rounded-xl overflow-hidden border border-[#223043] flex flex-col text-center shadow-lg relative group h-[320px]">
+                <div class="w-full h-52 relative">
+                  <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
+                  <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#131b26] to-transparent"></div>
                 </div>
-                <div class="px-2 pb-5 mt-[-1.5rem] relative z-10 flex flex-col items-center justify-end h-full">
-                  <h4 class="text-white font-extrabold text-sm mb-3">Mr. Mulka III</h4>
-                  <div class="inline-block px-3 py-1 border border-[#1b3b2c] rounded-full mb-3">
+                <div class="px-2 pb-6 mt-[-1rem] relative z-10 flex flex-col items-center justify-end h-full">
+                  <h4 class="text-white font-bold text-base mb-4 font-serif">Mr. Mulka III</h4>
+                  <div class="inline-flex items-center px-4 py-1.5 border border-[#183a2d] rounded-full mb-3 bg-[#112a20]/50">
                     <span class="text-[#4ade80] text-[10px] font-bold">2023 &ndash; 2024</span>
                   </div>
                   <p class="text-[9px] font-bold tracking-widest text-slate-500 uppercase">&bull; Past &bull;</p>
@@ -299,13 +302,13 @@
             </div>
 
             <!-- CTA Banner -->
-            <div class="bg-[#174835] rounded-xl border border-[#246246] p-6 flex flex-row items-center justify-between group cursor-pointer hover:bg-[#1b553e] transition-colors shadow-xl">
+            <div class="bg-[#1c4d36] rounded-xl border border-[#266245] p-6 flex flex-row items-center justify-between group cursor-pointer hover:bg-[#1f563d] transition-colors shadow-lg">
               <div>
-                <h4 class="text-white font-bold text-lg mb-1">Explore NACOS History</h4>
-                <p class="text-[#89bca5] text-sm group-hover:text-white transition-colors">See all past leaders, their tenure and achievements</p>
+                <h4 class="text-white font-bold text-xl mb-1.5 font-serif">Explore NACOS History</h4>
+                <p class="text-[#88bba4] text-[15px] group-hover:text-white transition-colors">See all past leaders, their tenure and achievements</p>
               </div>
-              <div class="w-10 h-10 rounded-full bg-[#208759] flex flex-col items-center justify-center shrink-0 border border-[#2eb579]">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              <div class="w-11 h-11 rounded-full bg-[#249663] flex flex-col items-center justify-center shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </div>
             </div>
           </div>
